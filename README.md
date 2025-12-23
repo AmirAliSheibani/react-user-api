@@ -90,5 +90,4 @@ react-user-api-demo/
 * **useEffect و useState** برای دریافت اطلاعات از API و مدیریت Loading/Error
 * **Tailwind CSS** برای طراحی ساده و ریسپانسیو
 
----
 
