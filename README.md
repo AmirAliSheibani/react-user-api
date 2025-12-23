@@ -1,5 +1,4 @@
 
-
 # React User API 
 
 یک پروژه ساده React برای نمایش **لیست کاربران** و مشاهده جزئیات آن‌ها با استفاده از **API عمومی JSONPlaceholder**.
@@ -91,8 +90,17 @@ react-user-api-demo/
 * **Tailwind CSS** برای طراحی ساده و ریسپانسیو
 ---
 ## ScreenShots
+
+### لیست کاربران
+
 <img width="1920" height="1080" alt="usersLists" src="https://github.com/user-attachments/assets/a618ce55-ee16-47ac-8767-3a21a0d5f40f" />
+
+### جزئیات کاربر
+
 <img width="1920" height="1080" alt="details" src="https://github.com/user-attachments/assets/78633934-3fbe-468b-885f-267d44cc57de" />
+
+
+
 
 
 
