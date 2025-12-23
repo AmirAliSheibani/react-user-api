@@ -89,5 +89,10 @@ react-user-api-demo/
 * **React Router DOM** برای مدیریت مسیرها
 * **useEffect و useState** برای دریافت اطلاعات از API و مدیریت Loading/Error
 * **Tailwind CSS** برای طراحی ساده و ریسپانسیو
+---
+## ScreenShots
+<img width="1920" height="1080" alt="usersLists" src="https://github.com/user-attachments/assets/a618ce55-ee16-47ac-8767-3a21a0d5f40f" />
+<img width="1920" height="1080" alt="details" src="https://github.com/user-attachments/assets/78633934-3fbe-468b-885f-267d44cc57de" />
+
 
 
