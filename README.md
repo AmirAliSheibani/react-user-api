@@ -1,16 +1,94 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# React User API 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+یک پروژه ساده React برای نمایش **لیست کاربران** و مشاهده جزئیات آن‌ها با استفاده از **API عمومی JSONPlaceholder**.
 
-## React Compiler
+## ویژگی‌ها
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* نمایش لیست کاربران با نام و ایمیل
+* مشاهده جزئیات هر کاربر در صفحه جداگانه (آدرس، تلفن، شرکت و وب‌سایت)
+* مدیریت وضعیت Loading و Error
+* طراحی ساده با **Tailwind CSS**
+* ساختار تمیز و قابل گسترش برای اضافه کردن امکانات دیگر مثل جستجو یا فیلتر
 
-## Expanding the ESLint configuration
+## پیش‌نیازها
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Node.js و npm نصب شده
+
+## نحوه اجرا (لوکال)
+
+1. پروژه را کلون کنید:
+
+```bash
+git clone https://github.com/USERNAME/react-user-api-demo.git
+cd react-user-api-demo
+```
+
+2. نصب وابستگی‌ها:
+
+```bash
+npm install
+```
+
+3. اجرای پروژه:
+
+```bash
+npm run dev
+```
+
+4. باز کردن در مرورگر:
+
+```
+http://localhost:5173
+```
+
+---
+
+## ساختار پروژه
+
+```
+react-user-api-demo/
+├─ src/
+│  ├─ components/
+│  │  ├─ UserList.jsx      # نمایش لیست کاربران
+│  │  └─ UserDetails.jsx   # نمایش جزئیات کاربر
+│  ├─ App.jsx              # تعریف مسیرها و کامپوننت‌ها
+│  ├─ main.jsx             # ورود به برنامه
+│  └─ index.css            # استایل‌های Tailwind
+├─ .gitignore
+├─ package.json
+├─ index.html
+├─ postcss.config.js
+├─ tailwind.config.js
+├─ README.md
+└─ vite.config.js
+```
+
+---
+
+## مسیرها (Routes)
+
+### `/`
+
+نمایش **لیست کاربران**.
+
+* کلیک روی هر کاربر به صفحه جزئیات هدایت می‌کند.
+
+### `/user/:id`
+
+نمایش **جزئیات کاربر** با استفاده از `id`.
+
+* اطلاعات: نام، ایمیل، تلفن، وب‌سایت، شرکت و آدرس.
+* دکمه بازگشت به لیست کاربران.
+
+---
+
+## نکات فنی
+
+* **React Router DOM** برای مدیریت مسیرها
+* **useEffect و useState** برای دریافت اطلاعات از API و مدیریت Loading/Error
+* **Tailwind CSS** برای طراحی ساده و ریسپانسیو
+
+---
+
